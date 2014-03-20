@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid black;
+    float: left;
+    width: 100%;
+}
+
+div#center {
+    border: 1px solid black;
+    height: 10em;
+    margin: 0 auto;
+    width: 60em;
+}
+
+img#logo {
+    float: left;
+    height: 10em;
+    margin: 0 1em 0 0;
+}
+
+div#hseparator {
+    clear: right;
+    float: left;
+    height: 7em;
+    width: 48em;
+}
+
+h1 {
+    float: left;
+    font-family: sans-serif;
+    font-size: 5em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+section#social_networks {
+    border: 1px solid black;
+    float: right;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    border-right: 1px solid #e1e1e1;
+    float: left;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    height: 1.3em;
+    min-width: 4.5em;
+    text-align: center;
+}
+
+nav ul li:first-child {
+    border-left: 1px solid #e1e1e1;
+}
+
+nav ul li#home {
+    width: 4.5em;
+}
+
+nav ul li#campaign,
+nav ul li#contact {
+    width: 6em;
+}
+
+nav ul li.selected {
+    border-bottom: 5px solid cadetblue;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid #f7515d;
+    cursor: pointer;
+}
