@@ -6,13 +6,14 @@
 header {
     border-bottom: 1px solid black;
     float: left;
+    margin-bottom: 2em;
     width: 100%;
 }
 
-div#center {
-    border: 1px solid black;
+div#header_center {
     height: 10em;
     margin: 0 auto;
+    position: relative;
     width: 60em;
 }
 
@@ -35,15 +36,27 @@ h1 {
     font-size: 5em;
     font-style: italic;
     font-weight: normal;
+    margin: 0 0 0 0.4em;
 }
 
 section#social_networks {
-    border: 1px solid black;
     float: right;
+    margin: 1.5em 0 0 0;
+}
+
+section#social_networks img {
+    height: 40px;
+}
+
+section#social_networks img:hover {
+    cursor: pointer;
 }
 
 nav {
     float: left;
+    margin: 0 0 0 2.3em;
+    position: relative;
+      top: 9px;
 }
 
 nav ul {
@@ -74,10 +87,112 @@ nav ul li#contact {
 }
 
 nav ul li.selected {
-    border-bottom: 5px solid cadetblue;
+    border-bottom: 5px solid #355a72;
 }
 
 nav ul li:hover {
-    border-bottom: 5px solid #f7515d;
+    border-bottom: 5px solid #a13b27;
     cursor: pointer;
+}
+
+main {
+
+}
+
+div#main_center {
+    margin: 0 auto;
+    width: 60em;
+}
+
+div#left_container {
+    float: left;
+    margin: 6em 1em 0 0;
+}
+
+div#left_container img {
+    height: 19em;
+}
+
+article {
+    float: left;
+    height: 6em;
+    width: 46em;
+}
+
+article {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+article h2 {
+    letter-spacing: 1px;
+}
+
+section#showcase {
+    background-image: url('../images/pcl.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    height: 20em;
+    position: relative;
+    width: 46em;
+}
+
+div#top_overlay {
+    position: absolute;
+      top: 0;
+    width: 100%;
+}
+
+div#top_overlay h3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: darkslategrey;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0.5em auto;
+    text-align: center;
+    width: 12em;
+}
+
+div#bottom_overlay {
+    position: absolute;
+      bottom: 0;
+    width: 100%;
+}
+
+div#bottom_overlay h3,
+div#bottom_overlay h4 {
+    color: darkslategrey;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+div#bottom_overlay h3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 15em;
+}
+
+div#bottom_overlay h4 {
+    background-color: lightblue;
+    font-size: 1.5em;
+    text-decoration: underline;
+    width: 10em;
+}
+
+div#bottom_overlay h4:hover {
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+footer {
+    background-color: lightsteelblue;
+    float: left;
+    height: 7em;
+    margin-top: 2em;
+    width: 100%;
 }
