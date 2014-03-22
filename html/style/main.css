@@ -115,17 +115,34 @@ div#left_container img {
 
 article {
     float: left;
-    height: 6em;
+    height: auto;
     width: 46em;
 }
 
 article {
     font-family: sans-serif;
-    font-weight: normal;
 }
 
 article h2 {
+    font-weight: normal;
     letter-spacing: 1px;
+}
+
+article a {
+    font-size: 0.85em;
+    margin: 0 0 0.5em 0;
+}
+
+article a:visited {
+    color: blue;
+}
+
+article a#hideDetails {
+    display: block;
+}
+
+article a#showDetails {
+    display: block;
 }
 
 section#showcase {
@@ -192,7 +209,55 @@ div#bottom_overlay h4:hover {
 footer {
     background-color: lightsteelblue;
     float: left;
-    height: 7em;
+    height: auto;
     margin-top: 2em;
+    padding: 1em 0 0 0;
     width: 100%;
+}
+
+footer h5 {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+div#footer_center {
+    margin: 0 auto 1em;
+    position: relative;
+    width: 22em;
+}
+
+section#footer_about {
+    float: left;
+    margin: 0 2em 0 0;
+    position: absolute;
+      top: 0;
+      left: 0;
+    width: 10em;
+}
+
+section#footer_contact {
+    float: right;
+    margin: 0 2em 1em 0;
+    width: 10em;
+}
+
+footer h6 span#copyright,
+footer h6 span#author {
+    float: left;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer h6 span#author {
+    margin: 0 0 1em 0;
 }
