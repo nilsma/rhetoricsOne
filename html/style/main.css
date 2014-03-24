@@ -4,7 +4,6 @@
 }
 
 header {
-    border-bottom: 1px solid black;
     float: left;
     margin-bottom: 2em;
     width: 100%;
@@ -65,12 +64,15 @@ nav ul {
 }
 
 nav ul li {
+    background-color: #3e9a5e;
     border-right: 1px solid #e1e1e1;
+    color: #fff;
     float: left;
     font-family: sans-serif;
     font-size: 1.4em;
     height: 1.3em;
     min-width: 4.5em;
+    padding: 2px 0 0 0;
     text-align: center;
 }
 
@@ -163,11 +165,12 @@ div#top_overlay h3 {
     background-color: rgba(255, 255, 255, 0.5);
     color: darkslategrey;
     font-family: sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: normal;
     margin: 0.5em auto;
+    padding: 0.5em;
     text-align: center;
-    width: 12em;
+    width: 20em;
 }
 
 div#bottom_overlay {
@@ -189,7 +192,8 @@ div#bottom_overlay h4 {
 
 div#bottom_overlay h3 {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 15em;
+    font-size: 1.1em;
+    width: 20em;
 }
 
 div#bottom_overlay h4 {
