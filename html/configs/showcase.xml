@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slides>
+    <slide>
+        <top_overlay>Help me to help us ...</top_overlay>
+        <bottom_overlay>... save the colors of the world!</bottom_overlay>
+        <start_image>images/props/1a.jpeg</start_image>
+        <end_image>images/props/1b.jpeg</end_image>
+    </slide>
+    <slide>
+        <top_overlay>Give a hand to ...</top_overlay>
+        <bottom_overlay>... protect those who need it!</bottom_overlay>
+        <start_image>images/props/2a.jpeg</start_image>
+        <end_image>images/props/2b.jpeg</end_image>
+    </slide>
+    <slide>
+        <top_overlay>Where there is life ...</top_overlay>
+        <bottom_overlay>... there is hope!</bottom_overlay>
+        <start_image>images/props/3a.jpeg</start_image>
+        <end_image>images/props/3b.jpeg</end_image>
+    </slide>
+</slides>

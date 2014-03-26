@@ -1,6 +1,6 @@
 function altFacebook() {
     var oldsrc = 'images/facebook_gray.png';
-    var newsrc = 'images/facebook_green.png';
+    var newsrc = 'images/facebook_blue.png';
     $('#facebook').mouseenter(function() {
         $(this).attr('src', newsrc);
     }).mouseleave(function() {
@@ -10,7 +10,7 @@ function altFacebook() {
 
 function altTwitter() {
     var oldsrc = 'images/twitter_alt_gray.png';
-    var newsrc = 'images/twitter_alt_green.png';
+    var newsrc = 'images/twitter_alt_blue.png';
     $('#twitter').mouseenter(function() {
         $(this).attr('src', newsrc);
     }).mouseleave(function() {
@@ -20,7 +20,7 @@ function altTwitter() {
 
 function altGoogle() {
     var oldsrc = 'images/google_gray.png';
-    var newsrc = 'images/google_green.png';
+    var newsrc = 'images/google_blue.png';
     $('#google').mouseenter(function() {
         $(this).attr('src', newsrc);
     }).mouseleave(function() {
@@ -30,12 +30,26 @@ function altGoogle() {
 
 function altYoutube() {
     var oldsrc = 'images/linkedin_gray.png';
-    var newsrc = 'images/linkedin_green.png';
+    var newsrc = 'images/linkedin_blue.png';
     $('#linkedin').mouseenter(function() {
         $(this).attr('src', newsrc);
     }).mouseleave(function() {
         $(this).attr('src', oldsrc);
     });
+}
+
+/**
+ * a function to move the left div image holder up or down dependent of the direction given
+ * the function moves the div a set distance to match the showcase div
+ * @param direction boolean - moves the div further down if false, up otherwise
+ */
+function adjustHeadshot(direction) {
+    var element = document.getElementById('left_container');
+    if(direction == false) {
+        element.style.margin='20.7em 1em 0 0';
+    } else {
+        element.style.margin='6.7em 1em 0 0';
+    }
 }
 
 /**
@@ -48,6 +62,7 @@ function showDetails() {
     for(var i = 0; i < elements.length; i++) {
         elements[i].style.display='block';
     }
+    adjustHeadshot(false);
     toggleLink();
 }
 
@@ -61,6 +76,7 @@ function hideDetails() {
     for(var i = 0; i < elements.length; i++) {
         elements[i].style.display='none';
     }
+    adjustHeadshot(true);
     toggleLink();
 }
 
