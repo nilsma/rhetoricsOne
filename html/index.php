@@ -36,10 +36,10 @@
             </div>
             <article id="text">
                 <h2>One hundred million reasons to support a good cause</h2>
-                <p>In a joint effort to protect the world's beautiful and precious environment for the good of all
-                    of mankind, we would like to invite you to support us by signing up for our email list.
+                <p>Some say everything is just fine and that we should just keep going, while others say that we
+                    already have one foot in the grave. I think that there is a middle-way where we can have both
+                    a prosperous community and a future world for our children!
                     <a href="#" id="showDetails" onclick="showDetails()">Learn more ...</a>
-                    <a href="#" id="hideDetails" onclick="hideDetails()">Hide details ...</a>
                 </p>
                 <p><span class="hidden">To get us underway, I have pledged to give $50 million to make the environment a top-tier political
                 issue when our proud nation enter the 2014 electoral voting and proceedings. The other $50 million
@@ -49,7 +49,9 @@
                 you will also help us all by stating that you support our cause, and thereby making us more attractive
                 for other contributors.</span></p>
                 <p><span class="hidden">We would be thankful if you could find the time to sign up for our email list, and the men, women and
-                children of the future will thank you as well!</span></p>
+                children of the future will thank you as well!</span>
+                    <a href="#" id="hideDetails" onclick="hideDetails()">Hide details ...</a>
+                </p>
             </article>
             <section id="showcase">
                 <div id="img_wrapper">
