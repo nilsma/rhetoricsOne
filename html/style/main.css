@@ -124,7 +124,7 @@ div#main_center {
 
 div#left_container {
     float: left;
-    margin: 6.7em 1em 0 0;
+    margin: 8em 1em 0 0;
 }
 
 div#left_container img {
@@ -177,13 +177,18 @@ section#showcase img {
     width: 46em;
 }
 
-section#showcase img#first,
-section#showcase img#second {
-    display: none;
-}
-
 section#showcase img#first {
     display: block;
+    position: absolute;
+      top: 0;
+      left: 0;
+}
+
+section#showcase img#second {
+    display: none;
+    position: absolute;
+      top: 0;
+      left: 0;
 }
 
 div#img_wrapper {
@@ -202,6 +207,7 @@ div#top_overlay {
 div#top_overlay h3 {
     background-color: rgba(255, 255, 255, 0.5);
     color: darkslategrey;
+    display: none;
     font-family: sans-serif;
     font-size: 1.1em;
     font-weight: normal;
@@ -212,6 +218,7 @@ div#top_overlay h3 {
 }
 
 div#bottom_overlay {
+    display: none;
     position: absolute;
       bottom: 0;
     width: 100%;
@@ -236,7 +243,7 @@ div#bottom_overlay h3 {
 
 div#bottom_overlay h4 {
     background-color: lightblue;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: underline;
     width: 10em;
 }

@@ -55,13 +55,13 @@
             </article>
             <section id="showcase">
                 <div id="img_wrapper">
-                    <img id="first" src="images/props/1b.jpeg">
-                    <img id="second" src="images/props/2b.jpeg">
+                    <img id="first" src="images/props/1a.jpeg">
+                    <img id="second" src="images/props/1b.jpeg">
                     <div id="top_overlay">
                         <h3 id="top">Help me save ...</h3>
                     </div>
                     <div id="bottom_overlay">
-                        <h3 id="bottom">... the beauty of the world!</h3>
+                        <h3 id="bottom">... the colors of the world!</h3>
                         <h4 id="punch">Lend a hand!</h4>
                     </div>
                 </div>
