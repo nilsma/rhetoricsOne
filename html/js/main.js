@@ -63,14 +63,16 @@ function altYoutube() {
  * the function moves the div a set distance to match the showcase div
  * @param direction boolean - moves the div further down if false, up otherwise
  */
+/*
 function adjustHeadshot(direction) {
     var element = document.getElementById('left_container');
     if(direction == false) {
-        element.style.margin='22em 1em 0 0';
+        element.style.margin='21.7em 1em 0 0';
     } else {
         element.style.margin='8em 1em 0 0';
     }
 }
+*/
 
 /**
  * a function that shows the paragraph span elements of class 'hidden'
@@ -82,7 +84,7 @@ function showDetails() {
     for(var i = 0; i < elements.length; i++) {
         elements[i].style.display='block';
     }
-    adjustHeadshot(false);
+//    adjustHeadshot(false);
     toggleLink();
 }
 
@@ -96,7 +98,7 @@ function hideDetails() {
     for(var i = 0; i < elements.length; i++) {
         elements[i].style.display='none';
     }
-    adjustHeadshot(true);
+//    adjustHeadshot(true);
     toggleLink();
 }
 
@@ -146,10 +148,10 @@ function graphicsCtrl() {
 function topOverlay(callback) {
     setTimeout(function() {
         $(document).ready(function() {
-            $('div#top_overlay h3').fadeIn(1000);
+            $('div#top_overlay h3').fadeIn(500);
         });
         callback();
-    }, 1000);
+    }, 500);
 }
 
 /**
@@ -182,6 +184,51 @@ function changeBkg(element, direction) {
 }
 
 /**
+ * a function to set the showcase elements' settings upon mouseenter, and
+ * resets the elements' settings on mouseleave
+ */
+function imageHover() {
+    $('section#showcase').mouseenter(function() {
+        $('h3#bottom').css('opacity', '0.4');
+        $('h4#punch').css('background-color', 'rgba(217, 39, 56, 0.8)')
+            .css('color', 'white');
+    }).mouseleave(function() {
+        $('h3#bottom').css('opacity', '1');
+        $('h4#punch').css('background-color', 'rgba(135, 206, 250, 0.49')
+            .css('color', 'black');
+        resetPunch();
+    });
+}
+
+/**
+ * a function to reset the punch element's text
+ */
+function resetPunch() {
+    var element = document.getElementById('punch');
+    element.innerHTML='Lend a hand!';
+}
+
+/**
+ * a function to change the punch element's text upon click
+ */
+function punchClick() {
+    var element = document.getElementById('punch');
+    var string = 'Thank You!';
+    element.addEventListener('click', function() {
+//        element.style.boxShadow='0px 0px 0px #000';
+        element.innerHTML=string;
+    }, false);
+}
+
+function punchHover() {
+    $('h4#punch').mouseenter(function() {
+        $(this).css('box-shadow', '3px 2px 4px #000');
+    }).mouseleave(function() {
+        $(this).css('box-shadow', '0 0 0 #000');
+    });
+}
+
+/**
  * a function that initiates the settings of the page's elements
  * on window load
  */
@@ -192,4 +239,7 @@ window.onload = function initiate() {
     altGoogle();
     altYoutube();
     graphicsCtrl();
+    imageHover();
+    punchClick();
+    punchHover();
 };
